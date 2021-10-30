@@ -62,6 +62,28 @@ main {
     display: flex;
 }
 
+/* body (2) => Main => Wrapper => (2) movies.html */
+.main_wrapper_movies {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.movie_poster {
+    width: 30%;
+    height: 40%;
+    /* background-color: red; */
+    /* border-right: 1px solid black;
+    border-bottom: 1px solid black; */
+}
+.movie_poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 /* body (3) => Footer */
 footer {
     height: 10%;
@@ -69,6 +91,7 @@ footer {
     text-align: center;
     font-size: small;
     border-top: 1px solid green;
+    padding-top: 2%;
 }
 
 /* SPECIFIC CONFIGS SUCH AS UL'S AND IMAGES */
