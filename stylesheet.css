@@ -1,45 +1,72 @@
-body {font-family:Verdana, Arial, sans-serif; 
+/*Default styling*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    font-family:Verdana, Arial, sans-serif; 
     background-color:white; 
     text-align: left;
-    margin: 0px 0px 0px 0px;
-    padding: 10px;
+    margin: 0px;
     min-width: 800px;
+    height: 100vh;
+    width: 100vw;
+    /* padding: 10px; */
 }
-
+/* body (1) => Header */
 header {
-    background-color:#259ce0;
-    height: 40px;
-    padding-top: 20px;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid black;
+    /* background-color:#259ce0; */
+    /* height: 40px; */
+    /* padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 20px; */
 
 }
-
-.wrapper {min-width:800px;
-    display:flex;
+/* body (2) => Main */
+main {
+    min-width:800px;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    
+   
+}
+.main_wrapper {
+    width: 100%;
+    height: 100%;
+    /* background-color: blueviolet; */
+     /* display:flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
-    height: auto;
     margin: 0px 0px 0px 0px;
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 20px; */
+
 }
-img{
+/* img{
     align-self: center;
     max-width: 90%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
+/* body (3) => Footer */
 footer {
+    height: 10%;
+    width: 100%;
     text-align: center;
-    font-size: small
+    font-size: small;
+    border-top: 1px solid green;
 }
 
-check out VH
