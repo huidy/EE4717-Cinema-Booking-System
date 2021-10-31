@@ -77,7 +77,7 @@ main {
 }
 /* body (2) => Main => Wrapper => (3) cinemas.html */
 .main_wrapper_cinemas {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
