@@ -10,7 +10,7 @@ body {
     height: 100vh;
     width: 100vw;
 }
-
+/*==================== CONFIGURING DIV'S ======================*/
 /* body (1) => Header */
 header {
     width: 100%;
@@ -76,8 +76,15 @@ main {
     height: 100%;
     object-fit: contain;
 }
-
-
+/* body (2) => Main => Wrapper => (3) cinemas.html */
+.main_wrapper_cinemas {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 /* body (3) => Footer */
 footer {
     height: 10%;
@@ -98,14 +105,35 @@ footer {
     margin-right: auto;
 }
 
+/*  SPECIFIC CONFIGS FOR CINEMAS.HTML  */
 #JE_cinema_location {
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 300px;
-
+    width: 350px;
+    padding-top: 10px;
 }
-
+.cinema_card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* On mouse-over, add a deeper shadow */
+.cinema_card:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+.cinema_card_text {
+    padding: 2px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: small;
+}
 /* img{
     align-self: center;
     max-width: 90%;
