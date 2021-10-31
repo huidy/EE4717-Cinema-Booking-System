@@ -7,7 +7,7 @@ body {
     background-color:white; 
     margin: 0px;
     min-width: 800px;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
 }
 /*==================== CONFIGURING DIV'S ======================*/
@@ -44,13 +44,12 @@ main {
 .main_wrapper_index {
     width: 100%;
     height: 100%;
-    /* background-color: blueviolet; */
-     /* display:flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    min-height: fit-content;
+    display:flex;
+    flex-direction: column;
     align-items: stretch;
     margin: 0px 0px 0px 0px;
-    padding-top: 20px;
+    /* padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px; */
@@ -94,14 +93,41 @@ footer {
     border-top: 1px solid green;
     padding-top: 2%;
 }
-/* SPECIFIC CONFIGS SUCH AS UL'S AND IMAGES */
+
+
+/* SPECIFIC CONFIGS FOR INDEX.HTML */
+.homepage_banner {
+    height: 50%;
+    width: 100%;
+}
 #homepage_banner {
     height: auto;
     max-width: 100%;
-    max-height: auto;
+    max-height: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.news_bar {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 10px 10px 10px;
+    /* padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; */
+}
+#news_poster {
+    height: 40%;
+    width: 30%;
+}
+#news_posterWW {
+    height: 40%;
+    width: 30%;
 }
 
 
