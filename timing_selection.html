@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing Selection</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="scripts/javascript/calcprice.js"></script>
+</head>
+<body>
+    <!-- body (1) => Header -->
+    <header>
+        <div class="nav_bar">
+            <nav>
+                <b>
+                    <img src="logo.png" alt="Logo" style="float: left; size: 15px;"> &nbsp;
+                    <a href="check_booking.html" style="float: right; margin: 15px;">Check Booking</a>
+                    <a href="cinemas.html" style="float: right; margin: 15px;" >Cinemas</a> &nbsp;
+                    <a href="movies.html" style="float: right; margin: 15px;" >Movies</a> &nbsp;
+                    <a href="index.html" style="float: right; margin: 15px;">Home</a> &nbsp;
+                <b>
+            </nav>    
+        </div>
+    </header>
+    <!-- body (2) => Main -->
+    <main>
+        <div class="main_wrapper_timing_selection">
+            <form action="scripts/php/placeorder.php" method="get">
+                <table id="timetable">
+                    <tr>
+                        <th>Location</th>
+                        <th>Monday</th>
+                        <th>Wednesday</th>
+                        <th>Friday</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td>CinemaFTW @ JEM</td>
+                        <td>
+                            <label><input type="radio" id="regular" name="regularRadio" onchange="calculatePrice(1)" checked>10.00am </label>
+                            <br>
+                            <label><input type="radio" id="regular" name="regularRadio" onchange="calculatePrice(1)" checked>3.00pm </label>
+                            <br>
+                            <label><input type="radio" id="regular" name="regularRadio" onchange="calculatePrice(1)" checked>10.00pm </label>
+                            <br>
+                        </td>
+                        <td>
+                            <label><input type="radio" id="regular" name="regularRadio" onchange="calculatePrice(1)" checked>10.00am </label>
+                            <br>
+                            <label><input type="radio" id="regular" name="regularRadio" onchange="calculatePrice(1)" checked>3.00pm </label>
+                            <br>
+                            <label><input type="radio" id="regular" name="regularRadio" onchange="calculatePrice(1)" checked>10.00pm </label>
+                            <br>
+                            
+                        </td>
+                        <td>
+                            <label><input type="radio" id="regular" name="regularRadio" onchange="calculatePrice(1)" checked>10.00am </label>
+                            <br>
+                            <label><input type="radio" id="regular" name="regularRadio" onchange="calculatePrice(1)" checked>3.00pm </label>
+                            <br>
+                            <label><input type="radio" id="regular" name="regularRadio" onchange="calculatePrice(1)" checked>10.00pm </label>
+                            <br>
+                        </td>
+                        <td>
+                            <label><br> <input type="number" name="regularQuan" id="regularQuan" value="0" min="0" style="width:30px;" onchange="calculatePrice(1)"></label>
+                        </td>
+                        <td style="width:120px;">
+                            <p>
+                                 $<span id="regularTotal"></span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>    
+                
+                <p>
+                    Total Price: $<span id="totalPrice"></span>
+                </p>
+                   
+                <input style="margin-left:495px;" type="submit" value="Place order">
+            </form>
+        </div>
+    </main>
+    <!-- body (3) => Footer -->
+    <footer>
+        <i>Copyright &copy; 2021 CinemaFTW</i>
+        <br>
+        <i>huida@ganBrendan.com</i>
+    </footer>
+</body>
+</html>

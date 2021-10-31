@@ -84,6 +84,12 @@ main {
     justify-content: space-around;
     align-items: center;
 }
+/* body (2) => Main => Wrapper => (4) time_selection.html */
+.main_wrapper_timing_selection {
+    height: 100%;
+    width: 100%;
+}
+
 /* body (3) => Footer */
 footer {
     height: 10%;
@@ -161,12 +167,19 @@ footer {
     font-size: small;
 }
 
-/* img{
-    align-self: center;
-    max-width: 90%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
+/*  SPECIFIC CONFIGS FOR TIMING_SELECTION.HTML  */
+#timetable {
+    border:2px solid black;
+    width:90%;
+    margin:auto;
+    text-align: center;
+}
+#timetable {
+    border-collapse: collapse;
+}
+#th {
+    border:2px solid black;
+}
+#td {
+    border:2px solid black;
+}
