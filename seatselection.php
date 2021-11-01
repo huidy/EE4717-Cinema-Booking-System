@@ -1,5 +1,6 @@
 <?php
 include "scripts/php/updateDB.php";
+$time_choice = $_GET['timeChoice'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
