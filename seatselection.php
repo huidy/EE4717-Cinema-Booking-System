@@ -67,21 +67,16 @@ $time_choice = $_GET['timeChoice'];
                 <form action="scripts/php/placeorder.php" method="get">
                     <table id="seatselectiontable">
                         <tr>
-                            <th>Number of tickets available</th>
-                            <td>
-                                <span id="regularPrice"><?php insert_table_row(1) ?></span>
-                            </td>
-                            <td>
-                                <label><input type="number" name="numberof_seats" id="regularQuan" value="0" min="0" style="width:30px;" onchange="calculatePrice(1)"></label>
-					        <?php insert_table_row(1) ?>
-                            </td>
-                            <td style="width:120px;">
-						        <p>
-							        Subtotal: $<span id="regularTotal"></span>
-						        </p>
-					        </td>
+                            <th>
+                                Number of seats remaining: lalala<span id="number_of_seats"><?php insert_table_row(1) ?></span>
+                                NUmber of tickets I wanna buy<label><input type="number" name="selection_of_seats" id="choice" value="0" min="0" style="width:80px;" onchange="calculatePrice(1)"></label>
+                                lalla
+                            </th>
+                            <th>
+                                <!-- NUmber of tickets I wanna buy<label><input type="number" name="selection_of_seats" id="choice" value="0" min="0" style="width:80px;" onchange="calculatePrice(1)"></label> -->
+                                lalla
+                            </th>
                         </tr>
-                        
                     </table>
                     <input style="margin-left:495px;" type="submit" value="Place order">
                 </form>
