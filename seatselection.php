@@ -41,9 +41,9 @@ include "scripts/php/fill_showtiming_table.php";
     </header>
     <!-- body (2) => Main -->
     <main>
-        <div class="main_wrapper_showtimings">
+        <div class="main_wrapper_seatselection">
             <!-- showtimings_wrapper (1) => Movie Details & poster -->
-            <div class = "showtimings_wrapper_1">
+            <div class = "seatselection_wrapper_1">
                 <div class = "showtimings_wrapper_1_movieposter">
                     <img src="media/Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg" alt="Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster">
                 </div>
@@ -60,8 +60,8 @@ include "scripts/php/fill_showtiming_table.php";
                 </div>
             </div>
             <!-- showtimings_wrapper (2) => Show timings and location -->
-            <div class = "showtimings_wrapper_2">
-                <h1>Click to update product prices</h1>
+            <div class = "seatselection_wrapper_2">
+                <h2>Select the number of tickets you wish to purchase. Do note that seats are on a first come first served basis. </h2>
                 <form action="scripts/php/placeorder.php" method="get">
                     <table id="seatselectiontable">
                         <tr>
@@ -69,7 +69,6 @@ include "scripts/php/fill_showtiming_table.php";
                             <td>
                                 <span id="regularPrice"><?php insert_table_row(1) ?></span>
                             </td>
-                            <th>Just Java</th>
                             <td>
                                 <label><input type="number" name="numberof_seats" id="regularQuan" value="0" min="0" style="width:30px;" onchange="calculatePrice(1)"></label>
 					        <?php insert_table_row(1) ?>

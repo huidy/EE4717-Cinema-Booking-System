@@ -36,9 +36,20 @@ $sql = "CREATE TABLE IF NOT EXISTS movies_time_table (
     time_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     time_entry INT UNSIGNED NOT NULL
 )";
-//Checking if sql statement is successful (2) => "movies_time_table"
+//Checking if sql statement is successful (3) => "movies_time_table"
 if (!mysqli_query($conn, $sql)) {
-    echo "Error creating the time tables: ". mysqli_error($conn);
+    echo "Error creating the seating tables: ". mysqli_error($conn);
+    mysqli_close($conn);
+}
+//Adding tables to the database (4) => "movies_seats_available"
+$sql = "CREATE TABLE IF NOT EXISTS movies_seats_available (
+    time_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    number_of_seats INT UNSIGNED NOT NULL
+    FOREIGN KEY (time_id) REFERENCES movies_time_table(time_id)
+)";
+//Checking if sql statement is successful (4) => "movies_seats_available"
+if (!mysqli_query($conn, $sql)) {
+    echo "Error creating the seating tables: ". mysqli_error($conn);
     mysqli_close($conn);
 }
 //Inserting sample data into tables
