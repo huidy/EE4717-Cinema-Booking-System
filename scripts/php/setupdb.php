@@ -70,6 +70,7 @@ if (!mysqli_multi_query($conn, $sql)) {
     echo "Failed to fill the table with data: ".mysqli_error($conn);
     mysqli_close($conn);
 }
+
 //Closing the connection
 mysqli_close($conn);
 ?>

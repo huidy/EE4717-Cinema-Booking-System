@@ -1,5 +1,6 @@
 <?php
-include "scripts/php/setupdb.php"
+include "scripts/php/setupdb.php";
+include "scripts/php/fill_showtiming_table.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,27 +63,27 @@ include "scripts/php/setupdb.php"
                         </tr>
                         <!-- table => row (2) => Day of Choice Selection -->
                         <tr>
-                            <th><input type="radio" name="dateChoice">dateChoice1</th>
-                            <th><input type="radio" name="dateChoice">dateChoice2</th>
-                            <th><input type="radio" name="dateChoice">dateChoice3</th>
+                            <th><input type="radio" name="dateChoice"><span id="datechoice1"><?php insert_table_datechoice(1) ?></span></th>
+                            <th><input type="radio" name="dateChoice"><span id="datechoice2"><?php insert_table_datechoice(2) ?></span></span></th>
+                            <th><input type="radio" name="dateChoice"><span id="datechoice3"><?php insert_table_datechoice(3) ?></span></span></th>
                         </tr>
                         <!-- table => row (3) => Time slot selection (1)-->
                         <tr>
-                            <td><input type="radio" name="timeChoice">timeChoice1</td>
-                            <td><input type="radio" name="timeChoice">timeChoice1</td>
-                            <td><input type="radio" name="timeChoice">timeChoice1</td>
+                            <th><input type="radio" name="timeChoice"><span id="timechoice1"><?php insert_table_timechoice(1)?>&nbsp;hrs</span></th>
+                            <th><input type="radio" name="timeChoice"><span id="timechoice1"><?php insert_table_timechoice(1)?>&nbsp;hrs</span></th>
+                            <th><input type="radio" name="timeChoice"><span id="timechoice1"><?php insert_table_timechoice(1)?>&nbsp;hrs</span></th>
                         </tr>
                         <!-- table => row (4) => Time slot selection (2)-->
                         <tr>
-                            <td><input type="radio" name="timeChoice">timeChoice2</td>
-                            <td><input type="radio" name="timeChoice">timeChoice2</td>
-                            <td><input type="radio" name="timeChoice">timeChoice2</td>
+                            <th><input type="radio" name="timeChoice"><span id="timechoice2"><?php insert_table_timechoice(2)?>&nbsp;hrs</span></th>
+                            <th><input type="radio" name="timeChoice"><span id="timechoice2"><?php insert_table_timechoice(2)?>&nbsp;hrs</span></th>
+                            <th><input type="radio" name="timeChoice"><span id="timechoice2"><?php insert_table_timechoice(2)?>&nbsp;hrs</span></th>
                         </tr>
                         <!-- table => row (5) => Time slot selection (3)-->
                         <tr>
-                            <td><input type="radio" name="timeChoice">timeChoice3</td>
-                            <td><input type="radio" name="timeChoice">timeChoice3</td>
-                            <td><input type="radio" name="timeChoice">timeChoice3</td>
+                            <th><input type="radio" name="timeChoice"><span id="timechoice3"><?php insert_table_timechoice(3)?>&nbsp;hrs</span></th>
+                            <th><input type="radio" name="timeChoice"><span id="timechoice3"><?php insert_table_timechoice(3)?>&nbsp;hrs</span></th>
+                            <th><input type="radio" name="timeChoice"><span id="timechoice3"><?php insert_table_timechoice(3)?>&nbsp;hrs</span></th>
                         </tr>
                     </table>
                 </form>
