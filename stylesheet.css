@@ -146,6 +146,15 @@ main {
     width: 100%;
     height: 50%;
 }
+/* body (2) => Main => Wrapper => (3) cinemas.html */
+.main_wrapper_cinemas {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 
 
 /* body (3) => Footer */
