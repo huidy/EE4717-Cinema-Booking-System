@@ -58,10 +58,10 @@ include "scripts/php/fill_showtiming_table.php";
                     <p>Marvel Studios' "Shang-Chi and The Legend of The Ten Rings" stars Simu Liu as Shang-Chi, who must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization. The film also stars Tony Leung as Wenwu, Awkwafina as Shang-Chi's friend Katy and Michelle Yeoh as Jiang Nan, as well as Fala Chen, Meng'er Zhang, Florian Munteanu and Ronny Chieng.</p>
                                         
                 </div>
-            </div>0
+            </div>
             <!-- showtimings_wrapper (2) => Show timings and location -->
             <div class = "showtimings_wrapper_2">
-                <form action="" method="">
+                <form action="seatselection.php" method="GET">
                     <table>
                         <!-- table => row (1) -->
                         <tr>
@@ -72,25 +72,24 @@ include "scripts/php/fill_showtiming_table.php";
                         <!-- table => row (2) => Day of Choice Selection -->
                         <tr>
                             <th>
-                                <input type="radio" name="dateChoice"><span id="datechoice1"><?php insert_table_datechoice(1) ?></span>
-                                <input type="radio" name="dateChoice"><span id="datechoice2"><?php insert_table_datechoice(2) ?></span>
-                                <input type="radio" name="dateChoice"><span id="datechoice3"><?php insert_table_datechoice(3) ?></span>
+                               <h2>Show Timings for Today</h2>
                             </th>
                         </tr>
                         <!-- table => row (3) => Time slot selection (1)-->
                         <tr>
-                            <th><input type="radio" name="timeChoice"><span id="timechoice1"><?php insert_table_timechoice(1)?>&nbsp;hrs</span></th>
+                            <th><input type="radio" name="timeChoice" value="<?php insert_table_timechoice(1)?>"><span id="timechoice1"><?php insert_table_timechoice(1)?>&nbsp;hrs</span></th>
                     
                         </tr>
                         <!-- table => row (4) => Time slot selection (2)-->
                         <tr>
-                            <th><input type="radio" name="timeChoice"><span id="timechoice2"><?php insert_table_timechoice(2)?>&nbsp;hrs</span></th>
+                            <th><input type="radio" name="timeChoice" value="<?php insert_table_timechoice(2)?>"><span id="timechoice2"><?php insert_table_timechoice(2)?>&nbsp;hrs</span></th>
                         </tr>
                         <!-- table => row (5) => Time slot selection (3)-->
                         <tr>
-                            <th><input type="radio" name="timeChoice"><span id="timechoice3"><?php insert_table_timechoice(3)?>&nbsp;hrs</span></th>
+                            <th><input type="radio" name="timeChoice" value="<?php insert_table_timechoice(3)?>"><span id="timechoice3"><?php insert_table_timechoice(3)?>&nbsp;hrs</span></th>
                         </tr>
                     </table>
+                <input type="submit" value="Click here to proceed to seating" style="float:right;">
                 </form>
             </div>
         </div>

@@ -44,7 +44,7 @@ if (!mysqli_query($conn, $sql)) {
 //Adding tables to the database (4) => "movies_seats_available"
 $sql = "CREATE TABLE IF NOT EXISTS movies_seats_available (
     time_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    number_of_seats INT UNSIGNED NOT NULL
+    number_of_seats INT UNSIGNED NOT NULL,
     FOREIGN KEY (time_id) REFERENCES movies_time_table(time_id)
 )";
 //Checking if sql statement is successful (4) => "movies_seats_available"
@@ -75,6 +75,14 @@ $sql .= "INSERT INTO movies_time_table (time_id, time_entry)
 VALUES (NULL, 1500);";
 $sql .= "INSERT INTO movies_time_table (time_id, time_entry)
 VALUES (NULL, 2000);";
+
+//Insert into (4) => "movies_seats_available"
+$sql .= "INSERT INTO movies_seats_available (time_id, number_of_seats)
+VALUES (NULL, 20);";
+$sql .= "INSERT INTO movies_seats_available (time_id, number_of_seats)
+VALUES (NULL, 20);";
+$sql .= "INSERT INTO movies_seats_available (time_id, number_of_seats)
+VALUES (NULL, 20);";
 
 //Checking if sql statement is successful
 if (!mysqli_multi_query($conn, $sql)) {
