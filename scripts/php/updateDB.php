@@ -6,20 +6,16 @@ if (!$conn) {
 	die("Connection failed: " . mysqli_connect_error());
 	return;
 }
-//Declare variables 
-$movie1=$_GET['regular'];
-$smallCafe=$_GET['smallCafe'];
-
 
 for($i = 1; $i <= 3; $i++) {
 	if ($i == 1) {
-		$sql = "UPDATE f32ee.jj_products SET product_price = $regular WHERE product_id = $i";
+		$sql = "UPDATE f32ee.movies_seats_available SET number_of_seats = number_of_seats - cust_number WHERE time_id = $i";
 		mysqli_query($conn, $sql);
 	} elseif ($i == 2) {
-		$sql = "UPDATE f32ee.jj_products SET product_price = $smallCafe WHERE product_id = $i";
+		$sql = "UPDATE f32ee.movies_seats_available SET number_of_seats = number_of_seats - cust_number WHERE time_id = $i";
 		mysqli_query($conn, $sql);
 	} elseif ($i == 3) {
-		$sql = "UPDATE f32ee.jj_products SET product_price = $largeCafe WHERE product_id = $i";
+		$sql = "UPDATE f32ee.movies_seats_available SET number_of_seats = number_of_seats - cust_number WHERE time_id = $i";
 		mysqli_query($conn, $sql);
 	}
 }

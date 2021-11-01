@@ -64,18 +64,11 @@ include "scripts/php/updateDB.php";
                 <form action="scripts/php/placeorder.php" method="get">
                     <table id="seatselectiontable">
                         <tr>
-                            <th>
-                                Number of seats remaining: lalala<span id="number_of_seats"><?php insert_table_row(1) ?></span>
-                                NUmber of tickets I wanna buy<label><input type="number" name="selection_of_seats" id="choice" value="0" min="0" style="width:80px;" onchange="calculatePrice(1)"></label>
-                                lalla
-                            </th>
-                            <th>
-                                <!-- NUmber of tickets I wanna buy<label><input type="number" name="selection_of_seats" id="choice" value="0" min="0" style="width:80px;" onchange="calculatePrice(1)"></label> -->
-                                lalla
-                            </th>
+                            <td>Number of seats available: <span id="number_of_seats"></td>
+                            <td>How many tickets do you wish to purchase?   <label><input type="number" name="cust_number" id="cust_number" value="0" min="1" style="width:30px;" ></label> </td>
                         </tr>
                     </table>
-                    <input style="margin-left:495px;" type="submit" value="Place order">
+                    <input style="float: right" type="submit" value="Place order">
                 </form>
             </div>
         </div>
