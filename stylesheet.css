@@ -4,7 +4,7 @@
 }
 body {
     font-family:Verdana, Arial, sans-serif; 
-    background-color:white; 
+    background-color:#D5D4D3; 
     margin: 0px;
     min-width: 800px;
     height: 100%;
@@ -35,9 +35,9 @@ main {
     width: 90%;
     height: 80%;
     margin: 0 auto;
-    border-bottom: 1px solid red;
+    /* border-bottom: 1px solid red;
     border-left: 1px solid red;
-    border-right: 1px solid red;
+    border-right: 1px solid red; */
 }
 /* body (2) => Main => Wrapper => (1) index.html */
 .main_wrapper_index {
@@ -95,20 +95,23 @@ main {
 .showtimings_wrapper_1 {
     width: 100%;
     height: 50%;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     display: flex;
 }
 /* showtimings_wrapper_1 => (1) Movie Poster */
 .showtimings_wrapper_1_movieposter {
     width: 40%;
     height: 100%;
-    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
 }
 /* showtimings_wrapper_1 => (2) Movie Details */
 .showtimings_wrapper_1_moviedetails {
     width: 60%;
     height: 100%;
-    background-color: green;
+    /* background-color: green; */
 }
 .showtimings_wrapper_2 {
     width: 100%;
@@ -160,7 +163,7 @@ footer {
     width: 100%;
     text-align: center;
     font-size: small;
-    border-top: 1px solid green;
+    /* border-top: 1px solid green; */
     padding-top: 2%;
 }
 

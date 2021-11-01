@@ -29,15 +29,17 @@ include "scripts/php/fill_showtiming_table.php";
 <body>
     <!-- body (1) => Header -->
     <header>
-        <nav>
-            <b>
-                <img src="logo.png" alt="Logo" style="float: left; size: 15px;"> &nbsp;
-                <a href="check_booking.html" style="float: right; margin: 15px;">Check Booking</a>
-                <a href="cinemas.html" style="float: right; margin: 15px;" >Cinemas</a> &nbsp;
-                <a href="movies.html" style="float: right; margin: 15px;" >Movies</a> &nbsp;
-                <a href="index.html" style="float: right; margin: 15px;">Home</a> &nbsp;
-            <b>
-        </nav>    
+        <div class="nav_bar">
+            <nav>
+                <b>
+                    <img src="media/logo_.png" alt="Logo" style="float: left; height: 3%; width: 3%;"> &nbsp;
+                    <a href="check_booking.html" style="float: right; margin: 10px;">Check Booking</a>
+                    <a href="cinemas.html" style="float: right; margin: 10px;" >Cinemas</a> &nbsp;
+                    <a href="movies.html" style="float: right; margin: 10px;" >Movies</a> &nbsp;
+                    <a href="index.html" style="float: right; margin: 10px;">Home</a> &nbsp;
+                <b>
+            </nav>    
+        </div>
     </header>
     <!-- body (2) => Main -->
     <main>
