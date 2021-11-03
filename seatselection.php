@@ -66,10 +66,10 @@ $time_choice = $_GET['timeChoice'];
             <!-- showtimings_wrapper (2) => Show timings and location -->
             <div class = "seatselection_wrapper_2">
                 <h2>Select the number of tickets you wish to purchase. Do note that seats are on a first come first served basis. </h2>
-                <form action="scripts/php/placeorder.php" method="get">
+                <form action="placeorder.php" method="get">
                     <table id="seatselectiontable">
                         <tr>
-                            <td>Number of seats available: <span id="number_of_seats"></td>
+                            <td>Number of seats available: <span id="number_of_seats"><?php insert_table_seatQty(1) ?></td>
                             <td>How many tickets do you wish to purchase?   <label><input type="number" name="cust_number" id="cust_number" value="0" min="1" style="width:30px;" ></label> </td>
                         </tr>
                     </table>

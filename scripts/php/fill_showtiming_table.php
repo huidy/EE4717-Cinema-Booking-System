@@ -48,4 +48,28 @@ function insert_table_timechoice ($id) {
         echo "Failed fetching the query from database";
     }
 }
+//function (3) => inserting the available seats remaining
+function insert_table_seatQty ($id) {
+    //Declaring server connection details
+    $severname = "localhost";
+    $username = "f32ee";
+    $password = "f32ee";
+    $dbname = "f32ee";
+    //Setting up connection to database
+    $conn = new mysqli ($severname, $username, $password, $dbname);
+    //Checking for connection
+    if (!$conn) {
+        die("Connection to the database failed: ".mysqli_connect_error());
+        // echo "Connection to database failed";
+    } 
+    //Writitng SQL statement to retrieve day_name from primary key match
+    $sql = "SELECT number_of_seats FROM movies_seats_available WHERE time_id = $id;";
+    $result = mysqli_query($conn, $sql);
+    if ($result) {
+        $row = mysqli_fetch_row($result);
+        echo $row[0];
+    } else {
+        echo "Failed fetching the query from database";
+    }
+}
 ?>
